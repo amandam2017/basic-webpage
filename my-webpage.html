@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <title>Basic Web Page</title>
+</head>
+<header>
+    <style>
+        body{
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(#e59791, #dbdd77,#8CB3AF);
+        }
+
+/***********my grid*************/ 
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.inner_container{
+    padding: 0 15px;
+}
+
+.col-6{
+    width:100%;
+}
+
+.col-4{
+    width:100%;
+}
+
+.col-4::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.col-3{
+    width: 25%;
+    float: left;
+}
+.col-9{
+    width: 75%;
+    float: left;
+}
+
+/*****************all sections style******************/
+
+.header_section,.city_section,.language_section,.historical_section{
+    padding-bottom:50px;
+}
+.historical_section ul{
+    margin: 0;
+}
+
+h1{
+    font-family: Crimson Text, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: Crimson Text, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*********************Header_section****************************/
+
+.header_section{
+    width:70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.header_section--heading{
+    float: left;
+    padding: 0 50px;
+}
+/******************City_section**************************/
+.city_section .city_section--image img{
+    width:100%;
+}
+
+       
+/****************Language section******************/
+
+.language_section table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+.language_section table, td, th{
+    border: 1px solid #000;
+}
+
+/******************Historical section global styles********************/
+
+/*********************manipulating the grid for only historical_section*************/
+.historical_section .col-6{
+    width: 50%;
+    float: left;
+}
+
+.historical_section .second_section .col-6{
+    float: right;
+}
+
+.historical_section img{
+    width:100%;
+}
+
+.historical_section ul{
+    padding:0px 20px;
+}
+
+.clearfix{
+    overflow: auto;
+    zoom: 1;
+}
+
+/************historical_section first_section*****************/
+
+/************historical_section second_section*****************/
+
+/************historical_section third_section*****************/         
+        
+/************RESPONSIVE*******************/
+
+@media(min-width:400px){
+    .col-6{
+        width:50%;
+        float: left;
+    }
+
+    .col-4{
+        width:33.33%;
+        float: left;
+    }
+
+    .historical_section .second_section .col-6{
+        float: left;
+    }
+
+    .city_section--text p, .city_section--text h3{
+        padding: 0 15px;
+    }
+}
+    </style>
+</header>
+<body>
+    <div class="container">
+        <div class="inner_container">
+        <div class="clearfix header_section">
+            <div class="header_section--heading">
+                <h1>AMANDA</h1>
+                <h1>MAARMAN</h1>
+            </div>
+            <div class="header_section--image">
+                <img src="images/paris.jpeg" alt="city">
+            </div>
+        </div>
+            
+        <div class="clearfix city_section">
+            <h2>Which City</h2>
+            <div class="col-6 city_section--image">
+                <img src="images/paris.jpeg" alt="city">
+            </div>
+            <div class="col-6 city_section--text">
+                <h3>Paris</h3>
+                <p>I would like to visit Paris one day to see Louvre is the world's biggest art museum and 
+                     the Eiffel Tower which is not the most visited monument in Paris.
+                </p>
+            </div>
+        </div>
+            
+        <div class="clearfix language_section">
+            <h2>Aforeign Language</h2>
+            <div class="col-12">
+                <table>
+                    <tr>
+                        <th>English Phrase</th>
+                        <th>Foreign Language</th>
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Bonjour</td>
+                    </tr>
+                    <tr>
+                        <td>Agile web developer</td>
+                        <td>développeur web agile</td>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Petit-déjeuner</td>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>portable</td>
+                    </tr>
+                    <tr>
+                        <td>Internet</td>    
+                        <td>l'Internet</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="clearfix historical_section">
+            <h2>Historic places in Cape Town</h2>
+            <div class="col-4 first_section">
+                <h3>Castle Of Good Hope</h3>
+                <div class="col-6 first_section--text">
+                    <ul>
+                        <li>It is the oldest colonial building in South Africa.</li>
+                        <li>In 1936 was declared a national monument.</li>
+                        <li>The first stone was laid on 2 January 1666.</li>
+                    </ul>
+                </div>
+                <div class="col-6 first_section--image">
+                    <img src="images/castle.jpg" alt="Castle Of Good Hope">
+                </div>
+            </div>
+            <div class="col-4 second_section">
+                <h3>District Six Museum</h3>
+                <div class="col-6 second_section--text">
+                    <ul>
+                        <li>It is a place of solace and for some, a place of healing.</li>
+                        <li>It is made up of 5 interconnected buildings</li>
+                        <li>It was named in 1867 as the Sixth Municipal District of Cape Town</li>
+                    </ul>
+                </div>
+                <div class="col-6 second_section--image">
+                    <img src="images/castle.jpg" alt="Distric Six Museum">
+                </div>
+            </div>
+            <div class="col-4 third_section">
+                <h3>City Hall</h3>
+                <div class="col-6 third_section--text">
+                    <ul>
+                        <li>It is the first place Nelson Mandela spoke from after his release.</li>
+                        <li>It is made of the honey coloured stone.</li>
+                        <li>The beautiful old building still has many stories to tell.</li>
+                    </ul>
+                </div>
+                <div class="col-6 third_section--image">
+                    <img src="images/castle.jpg" alt="City Hall">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

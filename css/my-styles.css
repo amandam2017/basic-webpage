@@ -1,0 +1,62 @@
+
+h1{
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 0;
+    color:#fff;
+}
+p{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+}
+a{
+    color: #fff;
+}
+.outer_container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-color:#0d6f4b;
+    margin-bottom: 0;
+}
+#first-webpage{
+    background-color: palevioletred;
+    padding: 5em 0;
+}
+#first-webpage:hover a{
+    background-color: yellow;
+}
+#second-webpage{
+    background-color: yellowgreen;
+    padding: 5em 0;
+}
+#first-webpage a,#second-webpage a{
+    text-decoration: none;
+    padding: 5em 3em;
+}
+.header_image{
+    width: 45%;
+    margin:auto;
+    border-radius: 50%;
+}
+.header_image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.footer p{
+    margin: 0.5rem 2%;
+    font-size: 1rem;
+    /* padding: 1.5rem; */
+    text-align: center;
+}
+
+@media only screen and (min-width: 45em){
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
