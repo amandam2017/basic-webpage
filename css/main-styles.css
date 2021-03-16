@@ -90,8 +90,11 @@ p{
 .historical_section li{
     font-size: 0.9rem;
 }
+.historical_section img{
+    width: 100%;
+}
 /*************ADDED ON RESPONSIVE*****************/
-@media (min-width: 45em){
+@media (min-width: 720px){
     h1{
         background: -webkit-linear-gradient(left, blue,yellowgreen,red,purple);
         -webkit-background-clip: text;
@@ -114,10 +117,12 @@ p{
     .historical_section .place_two .col-6{
         float: left;
     }
+
     .historical_section img{
-        width: 100%;
+        width: 100px;
         height: 200px;
     }
+    
     .header_section{
         background: -webkit-linear-gradient(45deg, black,transparent);
     }
@@ -150,9 +155,9 @@ p{
     } */
 }
 
-@media only screen and(min-width:60em){
+@media (min-width:1024px){
     .historical_section img{
-        width: 165px;
-        height: 200px;
+        width: 130px;
+        height: 230px;
     }
 }

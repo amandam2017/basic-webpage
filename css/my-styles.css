@@ -20,6 +20,11 @@ a{
     background-color:#0d6f4b;
     margin-bottom: 0;
 }
+
+.header_image{
+    background: -webkit-linear-gradient(45deg, black,transparent);
+}
+
 #first-webpage{
     background-color: palevioletred;
     padding: 5em 0;
