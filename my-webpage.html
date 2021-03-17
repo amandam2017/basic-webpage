@@ -15,18 +15,18 @@
             display: block;
             margin: 0;
             padding: 0;
-            background-image: linear-gradient(#e59791, #dbdd77,#8CB3AF);
+            background-image: linear-gradient(#e0e6e5, #d6d6c2,#d4bcba);
         }
 
 /***********my grid*************/ 
 .container{
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
-.inner_container{
+/* .inner_container{
     padding: 0 15px;
-}
+} */
 
 .col-6{
     width:100%;
@@ -59,8 +59,12 @@
 .historical_section ul{
     margin: 0;
 }
+img{
+    width:100%;
+}
 
 h1{
+    font-size: 22px;
     font-family: Crimson Text, Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -75,14 +79,18 @@ h2{
 /*********************Header_section****************************/
 
 .header_section{
-    width:70%;
+    width:65%;
     margin: auto;
     padding-top: 50px;
 }
 
 .header_section--heading{
     float: left;
-    padding: 0 50px;
+}
+
+.header_section .col-6 {
+    width: 50%;
+    float: left;
 }
 /******************City_section**************************/
 .city_section .city_section--image img{
@@ -134,7 +142,7 @@ h2{
         
 /************RESPONSIVE*******************/
 
-@media(min-width:400px){
+@media(min-width:768px){
     .col-6{
         width:50%;
         float: left;
@@ -152,6 +160,9 @@ h2{
     .city_section--text p, .city_section--text h3{
         padding: 0 15px;
     }
+    h1{
+        font-size: 37px;;
+    }
 }
     </style>
 </header>
@@ -159,12 +170,12 @@ h2{
     <div class="container">
         <div class="inner_container">
         <div class="clearfix header_section">
-            <div class="header_section--heading">
+            <div class="col-6 header_section--heading">
                 <h1>AMANDA</h1>
                 <h1>MAARMAN</h1>
             </div>
-            <div class="header_section--image">
-                <img src="images/paris.jpeg" alt="city">
+            <div class="col-6 header_section--image">
+                <img src="images/tablemountain-background.jpg" alt="city">
             </div>
         </div>
             
