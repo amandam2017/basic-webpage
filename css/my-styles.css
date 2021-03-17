@@ -26,16 +26,18 @@ a{
 }
 
 #first-webpage{
-    background-color: palevioletred;
+    background-color:#333447;
     padding: 5em 0;
+    text-align: center;
 }
-#first-webpage:hover a{
+/* #first-webpage:hover a{
     background-color: yellow;
     width: 100%;
-}
+} */
 #second-webpage{
-    background-color: yellowgreen;
+    background-color: #3f8f67;
     padding: 5em 0;
+    text-align: center;
 }
 #first-webpage a,#second-webpage a{
     text-decoration: none;
@@ -68,5 +70,21 @@ a{
     }
     p{
         font-size: 2rem;
+    }
+    a{
+        font-size: 13px;
+    }
+    #first-webpage{
+        background-color:#3f8f67;
+        padding: 5em 0;
+    }
+    #second-webpage{
+        background-color: #3f8f67;
+        padding: 5em 0;
+    }
+    #first-webpage a,#second-webpage a{
+        text-decoration: none;
+        padding: 3.5em;
+        background-color: black;
     }
 }
